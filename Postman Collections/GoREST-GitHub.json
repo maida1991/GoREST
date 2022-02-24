@@ -52,6 +52,19 @@
         "url": "https://gorest.co.in//public/v2/users/122"
       },
       "response": []
+    },
+    {
+      "name": "New Request",
+      "id": "076ece8c-1e23-4641-8bec-0115dca0878d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": null
+      },
+      "response": []
     }
   ]
 }
