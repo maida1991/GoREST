@@ -1,0 +1,57 @@
+{
+  "info": {
+    "_postman_id": "6df6182c-90ee-4e32-ab89-988ca1d0b0b5",
+    "name": "GoREST",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "e64e1211-5577-493c-9163-023f71bb8d95",
+            "exec": [
+              "pm.test(\"Users ID\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.id).to.eql(122);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Users name\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.name).to.eql(\"Bhagirathi Gandhi\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Users email\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.email).to.eql(\"gandhi_bhagirathi@farrell.co\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Users gender\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.gender).to.eql(\"male\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Users status\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.status).to.eql(\"active\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "2124d748-fc08-499b-9f19-6bab91b54b7d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://gorest.co.in//public/v2/users/122"
+      },
+      "response": []
+    }
+  ]
+}
