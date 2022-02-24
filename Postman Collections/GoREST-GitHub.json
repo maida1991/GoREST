@@ -6,7 +6,7 @@
   },
   "item": [
     {
-      "name": "New Request",
+      "name": "Get User",
       "event": [
         {
           "listen": "test",
@@ -42,7 +42,7 @@
           }
         }
       ],
-      "_postman_id": "2124d748-fc08-499b-9f19-6bab91b54b7d",
+      "id": "2124d748-fc08-499b-9f19-6bab91b54b7d",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
