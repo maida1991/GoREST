@@ -54,7 +54,7 @@
       "response": []
     },
     {
-      "name": "New Request",
+      "name": "Get comments",
       "id": "076ece8c-1e23-4641-8bec-0115dca0878d",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
