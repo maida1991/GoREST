@@ -1,4 +1,1 @@
-# gitlektion 123
-maidagit s
-maida 1
-123
+Projeckt for Newman and Jenkins
