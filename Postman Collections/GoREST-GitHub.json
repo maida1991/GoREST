@@ -55,6 +55,41 @@
     },
     {
       "name": "Get comments",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "fe641037-665a-49dc-8567-66d8a1b43107",
+            "exec": [
+              "pm.test(\"ID test\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.id).to.eql(116);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Post_id test\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.post_id).to.eql(122);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Name test\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.name).to.eql(\"Deeptiman Kakkar\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Email test\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.email).to.eql(\"kakkar_deeptiman@dooley.info\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Comments test\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.body).to.eql(\"Qui eligendi quia. Libero consequatur sit. Quis repellendus a.\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "id": "076ece8c-1e23-4641-8bec-0115dca0878d",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -62,7 +97,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": null
+        "url": "https://gorest.co.in//public/v2/posts/122/comments"
       },
       "response": []
     }
