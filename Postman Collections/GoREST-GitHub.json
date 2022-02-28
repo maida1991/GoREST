@@ -20,7 +20,7 @@
               "\r",
               "pm.test(\"Users name\", function () {\r",
               "    var jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.name).to.eql(\"Samir Jh\");\r",
+              "    pm.expect(jsonData.name).to.eql(\"Samir Jha\");\r",
               "});\r",
               "\r",
               "pm.test(\"Users email\", function () {\r",
