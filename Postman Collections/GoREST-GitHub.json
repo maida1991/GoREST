@@ -20,12 +20,12 @@
               "\r",
               "pm.test(\"Users name\", function () {\r",
               "    var jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.name).to.eql(\"Bhudev Nambeesan\");\r",
+              "    pm.expect(jsonData.name).to.eql(\"Rep. Bhudev Dwivedi\");\r",
               "});\r",
               "\r",
               "pm.test(\"Users email\", function () {\r",
               "    var jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.email).to.eql(\"bhudev_nambeesan@beer.co\");\r",
+              "    pm.expect(jsonData.email).to.eql(\"rep_dwivedi_bhudev@thiel.biz\");\r",
               "});\r",
               "\r",
               "pm.test(\"Users gender\", function () {\r",
@@ -35,7 +35,7 @@
               "\r",
               "pm.test(\"Users status\", function () {\r",
               "    var jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.status).to.eql(\"inactive\");\r",
+              "    pm.expect(jsonData.status).to.eql(\"active\");\r",
               "});"
             ],
             "type": "text/javascript"
